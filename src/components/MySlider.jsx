@@ -52,7 +52,7 @@ class MySlider extends Component {
         <Slider {...this.state.settings} className='pt-5 text-light'>
           {this.props.fantasyBook.slice(0, 12).map((singleBook, index) => {
             return (
-              <Card key={index}>
+              <Card key={index} className='h-100'>
                 <Card.Img variant='top' src={singleBook.img} />
                 <Card.Body>
                   <Card.Title>{singleBook.title}</Card.Title>
